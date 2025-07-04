@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import Orb from "@/components/background/orb";
+import Orb from "@/components/ui/orb";
 import Link from "next/link";
 import Image from "next/image";
 
