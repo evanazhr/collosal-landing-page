@@ -14,7 +14,8 @@ export default function Footer() {
         />
         <div className="flex flex-col md:flex-row gap-8 relative items-center justify-between py-6 border-t-1 border-b-1 border-white/10">
           <p className="text-[30px] text-center md:text-left font-bold">
-            We've prepared everything, it's time for you to tell the problem
+            We&apos;ve prepared everything, it&apos;s time for you to tell the
+            problem
           </p>
           <div className="flex gap-2">
             <Button>Send Quote</Button>
@@ -37,7 +38,7 @@ export default function Footer() {
               />
               Collosal
             </Link>
-            <p>Copyright © 2021</p>
+            <p>Copyright &copy; 2021</p>
             <p>Design By Collosal LLC</p>
           </div>
           <div>

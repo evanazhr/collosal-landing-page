@@ -8,7 +8,7 @@ export default function OurTeamSection() {
         <div className="md:w-1/2 flex flex-col mb-4 md:mb-0">
           <p className="uppercase text-base md:text-md mb-2">OUR TEAM</p>
           <h3 className="font-bold text-2xl lg:text-3xl mb-5 md:mb-7">
-            We're a team of designers, engineers and analysts
+            We&apos;re a team of designers, engineers and analysts
           </h3>
           <p className="text-base md:text-sm mb-6 md:mb-8">
             Our team consists of many creative people. We are committed to

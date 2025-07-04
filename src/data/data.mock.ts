@@ -20,7 +20,7 @@ const clients = [
     review:
       "\"I am really satisfied with it. I'm good to go. It really saves me time and effort. It's is exactly what our business has been lacking. \"",
   },
-   {
+  {
     name: "Courtney Henry",
     title: "Biffco Enterprises Ltd.",
     img: "/assets/avatar/avatar-1.png",

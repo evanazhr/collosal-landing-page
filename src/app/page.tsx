@@ -1,9 +1,9 @@
-import HeroSection from "@/components/sections/HeroSection.tsx";
-import HowWeWorkSection from "@/components/sections/HowWeWorkSection.tsx";
-import OurTeamSection from "@/components/sections/OurTeamSection.tsx";
-import ProjectSection from "@/components/sections/ProjectSection.tsx";
-import ServiceSection from "@/components/sections/ServiceSection.tsx";
-import TestimonialSection from "@/components/sections/TestimonialSection.tsx";
+import HeroSection from "@/components/sections/HeroSection";
+import HowWeWorkSection from "@/components/sections/HowWeWorkSection";
+import OurTeamSection from "@/components/sections/OurTeamSection";
+import ProjectSection from "@/components/sections/ProjectSection";
+import ServiceSection from "@/components/sections/ServiceSection";
+import TestimonialSection from "@/components/sections/TestimonialSection";
 
 export default function Home() {
   return (

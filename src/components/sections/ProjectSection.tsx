@@ -2,7 +2,7 @@ import Image from "next/image";
 import Orb from "@/components/ui/orb";
 import { Button } from "@/components/ui/button";
 
-export default function () {
+export default function ProjectSection() {
   return (
     <section className="w-full flex justify-center items-center">
       <div className="w-full max-w-[1100px] px-4 md:px-8 mx-auto">
