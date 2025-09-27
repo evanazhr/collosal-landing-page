@@ -10,6 +10,7 @@ import { Menu } from "lucide-react";
 
 export default function Navbar() {
   const [scrollY, setScrollY] = useState(0);
+  const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -20,28 +21,28 @@ export default function Navbar() {
   const NavItems = [
     {
       name: "Services",
-      url: "/service",
+      url: "/Services",
     },
     {
       name: "How We Work",
-      url: "/work",
+      url: "/HowWeWork",
     },
     {
       name: "Projects",
-      url: "/project",
+      url: "/Projects",
     },
     {
       name: "About",
-      url: "/about",
+      url: "/About",
     },
   ];
 
   return (
     <div
-      className={`${scrollY > 80 ? " top-2 sticky mx-auto z-50" : ""} max-w-[1100px] mx-auto duration-500 w-full px-4 md:px-8`}
+      className={`${scrollY > 80 ? " top-2 sticky mx-auto" : ""} max-w-[1100px] z-50 mx-auto duration-500 w-full px-4 md:px-8`}
     >
       <div
-        className={`${scrollY > 80 ? "bg-light backdrop-blur-md px-4 rounded-[5px]" : ""} py-6 flex flex-row justify-between items-center`}
+        className={`${scrollY > 80 ? "bg-light backdrop-blur-md px-4 rounded-[5px]" : ""} ${isOpen ? "space-y-6" : "space-y-0"} py-6 flex md:flex-row flex-col justify-between items-start md:items-center `}
       >
         <div className="flex justify-between w-full md:w-fit">
           <Link href={"/"} className="flex gap-2 justify-center items-center">
@@ -55,13 +56,14 @@ export default function Navbar() {
           </Link>
           <Button
             variant="ghost"
+            onClick={() => setIsOpen(!isOpen)}
             className="flex items-center justify-center md:hidden"
           >
             <Menu className="size-xl" />
           </Button>
         </div>
 
-        <nav className="hidden md:flex flex-row items-center justify-center gap-12">
+        <nav className={`${isOpen ? "flex" : "hidden"} flex-col top-20 items-start md:flex md:flex-row  md:items-center justify-center md:gap-12`}>
           {NavItems.map((item, index) => {
             return (
               <Link key={index} href={item.url} className="text-lg">

@@ -70,34 +70,29 @@ export default function TestimonialSection() {
               centeredSlides: true,
             },
           }}
-          // Event handler saat slide berubah
-          // swiper.realIndex digunakan karena loop:true dapat mempengaruhi swiper.activeIndex
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-          // Event ini untuk mengatur activeIndex saat inisialisasi awal Swiper
           onSwiper={(swiper) => setActiveIndex(swiper.realIndex)}
         >
-          {/* --- Iterasi Melalui Data Klien untuk Setiap SwiperSlide --- */}
           {clients.map((client, index) => (
             <SwiperSlide key={index}>
-              {/* Ini adalah div pembungkus setiap kartu testimonial */}
               <div
                 className={`flex flex-col my-20 items-center justify-center text-center p-8 md:p-12 gap-2 
                            bg-light rounded-lg shadow-xl h-full 
                            transform transition-all duration-300 ease-in-out
                            ${
-                             // Kelas kondisional untuk efek "kartu di tengah lebih tinggi"
                              index === activeIndex
                                ? "scale-[1.05] shadow-2xl translate-y-[-50px]" // Card aktif: sedikit lebih besar, bayangan lebih kuat, naik 15px
-                               : "scale-100 shadow-md" // Card tidak aktif: ukuran normal, bayangan normal
-                           }`}
+                               : "scale-100 shadow-md"                         }`}
               >
-                <Image
+                <div className="relative aspect-square">
+ <Image
                   src={client.img}
                   alt={client.name + " image"}
-                  width={70} // Ukuran gambar sedikit lebih besar untuk dampak visual
-                  height={70}
-                  className="rounded-full object-cover mb-4 border-4 border-blue-400" // Border yang lebih menonjol
-                />
+                  width={70}                  height={70}
+                  className="rounded-full object-cover mb-4"                />
+               
+              <Image src="/assets/icons/quote.svg" className="absolute bottom-0 right-0 bg-primary border-2 border-card-dark rounded-full p-1.5 size-6" alt="" width={15} height={15}/>
+                </div>
                 <p className="text-xl font-semibold mt-2">{client.name}</p>
                 <p className="text-md text-white/60 mb-4 font-medium">
                   {client.title}

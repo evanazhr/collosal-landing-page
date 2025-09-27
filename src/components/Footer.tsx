@@ -22,7 +22,7 @@ export default function Footer() {
             <Button variant="highlight">Ask Us</Button>
           </div>
         </div>
-        <div className="flex flex-col relative md:flex-row md:justify-between md:items-center justify-center items-start gap-8 leading-9 py-8">
+        <div className="flex flex-col relative md:flex-row md:justify-between md:items-start justify-center items-start gap-8 leading-9 py-8">
           <Orb
             className="lg:-left-30 animate-pulse left-0 top-0"
             variant="orb-1"
@@ -52,7 +52,7 @@ export default function Footer() {
                 { name: "Maintenance", url: "/" },
               ].map((item, index) => {
                 return (
-                  <li key={index}>
+                 <li key={index}>
                     <Link
                       href={item.url}
                       className="text-white/60 hover:text-white"

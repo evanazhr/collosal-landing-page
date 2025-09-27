@@ -6,6 +6,9 @@ import ServiceSection from "@/components/sections/ServiceSection";
 import TestimonialSection from "@/components/sections/TestimonialSection";
 
 export default function Home() {
+  const data = "abv"
+  data.split('')
+  console.log(data)
   return (
     <div className="w-full flex flex-col gap-20">
       {/* hero section */}
