@@ -43,4 +43,37 @@ const clients = [
   },
 ];
 
-export { clients };
+const teams = [
+  {
+    name: "Albert Flores",
+    imageUrl: "/assets/images/teams/team-1.png",
+    title: "Founder",
+  },
+  {
+    name: "Devon Lane",
+    imageUrl: "/assets/images/teams/team-2.png",
+    title: "Chief Technology Officer",
+  },
+  {
+    name: "Darrell Steward",
+    imageUrl: "/assets/images/teams/team-3.png",
+    title: "UI Designer",
+  },
+  {
+    name: "Marvin McKinney",
+    imageUrl: "/assets/images/teams/team-4.png",
+    title: "Software Engineer",
+  },
+  {
+    name: "Floyd Miles",
+    imageUrl: "/assets/images/teams/team-5.png",
+    title: "System Analyst",
+  },
+  {
+    name: "Annette Black",
+    imageUrl: "/assets/images/teams/team-6.png",
+    title: "Annette Black",
+  },
+];
+
+export { clients, teams };
