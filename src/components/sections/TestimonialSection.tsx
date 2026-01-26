@@ -1,19 +1,18 @@
-"use client"; // Penting: Direktif ini menandakan komponen ini akan dijalankan di sisi klien
-
+"use client";
 import Image from "next/image";
-import { clients } from "@/data/data.mock"; // Pastikan path ini benar ke data klien Anda
+import { clients } from "@/data/data.mock";
 
 // Import komponen Swiper React
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import gaya dasar Swiper
 import "swiper/css";
-import "swiper/css/pagination"; // Untuk titik-titik navigasi
-import "swiper/css/navigation"; // Untuk tombol panah navigasi
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 // Import modul yang dibutuhkan dari Swiper
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
-import { useState } from "react"; // Tambahkan import useState untuk melacak slide aktif
+import { useState } from "react";
 
 export default function TestimonialSection() {
   // State untuk melacak indeks slide aktif saat ini
@@ -21,13 +20,14 @@ export default function TestimonialSection() {
 
   return (
     <section className="w-full flex justify-center items-center py-12">
-      <div className="w-full max-w-[1366px] px-4 md:px-8 mx-auto relative">
+      <div className="w-full max-w-[1366px] px-4 md:px-16 mx-auto relative">
         <div className="flex flex-col items-center justify-center">
-          <p>TESTIMONIAL</p>
+          <p className="text-sm md:text-md">TESTIMONIAL</p>
           <h2 className="text-3xl max-w-[500px] font-bold text-center mb-8">
             What do our clients say that we never let down?
           </h2>
         </div>
+
         {/* --- Komponen Swiper Carousel --- */}
         <Swiper
           // Konfigurasi Dasar Swiper
@@ -78,20 +78,29 @@ export default function TestimonialSection() {
               <div
                 className={`flex flex-col my-20 items-center justify-center text-center p-8 md:p-12 gap-2 
                            bg-light rounded-lg shadow-xl h-full 
-                           transform transition-all duration-300 ease-in-out
+                           transform transition-all duration-300 ease-in-out 
                            ${
                              index === activeIndex
                                ? "scale-[1.05] shadow-2xl translate-y-[-50px]" // Card aktif: sedikit lebih besar, bayangan lebih kuat, naik 15px
-                               : "scale-100 shadow-md"                         }`}
+                               : "scale-100 shadow-md text-white/60"
+                           }`}
               >
                 <div className="relative aspect-square">
- <Image
-                  src={client.img}
-                  alt={client.name + " image"}
-                  width={70}                  height={70}
-                  className="rounded-full object-cover mb-4"                />
-               
-              <Image src="/assets/icons/quote.svg" className="absolute bottom-0 right-0 bg-primary border-2 border-card-dark rounded-full p-1.5 size-6" alt="" width={15} height={15}/>
+                  <Image
+                    src={client.img}
+                    alt={client.name + " image"}
+                    width={70}
+                    height={70}
+                    className="rounded-full object-cover mb-4"
+                  />
+
+                  <Image
+                    src="/assets/icons/quote.svg"
+                    className="absolute bottom-0 right-0 bg-primary border-2 border-card-dark rounded-full p-1.5 size-6"
+                    alt=""
+                    width={15}
+                    height={15}
+                  />
                 </div>
                 <p className="text-xl font-semibold mt-2">{client.name}</p>
                 <p className="text-md text-white/60 mb-4 font-medium">

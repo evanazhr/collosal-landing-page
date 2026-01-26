@@ -4,18 +4,18 @@ import { Button } from "@/components/ui/button";
 export default function HeroSection() {
   return (
     <section className="w-full flex items-center justify-center">
-      <div className="max-w-[1100px] mx-auto px-4 md:px-8 relative mt-20">
+      <div className="max-w-[1100px] mx-auto px-4 md:px-16 relative mt-20">
         <div className="size-50 md:size-150 absolute top-0 left-0 -translate-x-1/2 bg-[#FCA016]/10 -z-10 rounded-full blur-3xl"></div>
         <div className="size-50 md:size-150 absolute -top-20 left-0 bg-green/10 -z-10 rounded-full blur-3xl"></div>
         <div className="size-50 md:size-150 absolute -top-20 right-20 bg-[#FC165B]/10 -z-10 rounded-full blur-3xl"></div>
         <div className="text-center max-w-[600] mx-auto mb-20 flex flex-col items-center justify-center">
-          <p className="text-base md:text-md lg:text-lg font-semibold mb-3">
+          <p className="text-sm md:text-md font-semibold mb-3 text-green">
             CLIENT-DEVELOPMENT DRIVEN
           </p>
           <h1 className="text-3xl lg:text-4xl font-bold mb-6">
             We Design. We Develop. We Ship. In The Same Day.
           </h1>
-          <p className="text-base md:text-md lg:text-lg mb-[40px]">
+          <p className="text-base text-white/60 md:text-md lg:text-lg mb-[40px]">
             We are committed to not making clients wait. We will deliver the
             work as quickly as possible. Even on the same day. Even so, we do
             not reduce the quality of our work.
