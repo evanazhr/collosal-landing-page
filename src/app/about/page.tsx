@@ -4,10 +4,10 @@ import { DollarSign, Flag, User } from "lucide-react";
 
 export default function About() {
   return (
-    <div className="mx-auto w-full max-w-xl px-4 md:px-16">
-      <div className="size-50 md:size-150 absolute top-0 left-0 -translate-x-1/2 bg-[#FCA016]/10 -z-10 rounded-full blur-3xl"></div>
-      <div className="size-50 md:size-150 absolute -top-20 left-0 bg-green/10 -z-10 rounded-full blur-3xl"></div>
-      <div className="size-50 md:size-150 absolute -top-20 right-20 bg-[#FC165B]/10 -z-10 rounded-full blur-3xl"></div>
+    <div className="mx-auto w-full max-w-xl px-4 md:px-16 relative">
+      <span className="size-50 md:size-150 absolute top-0 left-0 -translate-x-1/2 bg-[#FCA016]/10 -z-10 rounded-full blur-3xl"></span>
+      <span className="size-50 md:size-150 absolute -top-20 left-0 bg-green/10 -z-10 rounded-full blur-3xl"></span>
+      <span className="size-50 md:size-150 absolute -top-20 right-20 bg-[#FC165B]/10 -z-10 rounded-full blur-3xl"></span>
       <div className="flex flex-col md:flex-row justify-center items-center gap-16 py-20 border-b-1 border-white/10">
         <div className="md:w-2/5">
           <Image

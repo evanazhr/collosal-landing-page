@@ -5,9 +5,9 @@ export default function HeroSection() {
   return (
     <section className="w-full flex items-center justify-center">
       <div className="max-w-[1100px] mx-auto px-4 md:px-16 relative mt-20">
-        <div className="size-50 md:size-150 absolute top-0 left-0 -translate-x-1/2 bg-[#FCA016]/10 -z-10 rounded-full blur-3xl"></div>
-        <div className="size-50 md:size-150 absolute -top-20 left-0 bg-green/10 -z-10 rounded-full blur-3xl"></div>
-        <div className="size-50 md:size-150 absolute -top-20 right-20 bg-[#FC165B]/10 -z-10 rounded-full blur-3xl"></div>
+        <span className="size-50 md:size-150 absolute top-0 left-0 -translate-x-1/2 bg-[#FCA016]/10 -z-10 rounded-full blur-3xl"></span>
+        <span className="size-50 md:size-150 absolute -top-20 left-0 bg-green/10 -z-10 rounded-full blur-3xl"></span>
+        <span className="size-50 md:size-150 absolute -top-20 right-20 bg-[#FC165B]/10 -z-10 rounded-full blur-3xl"></span>
         <div className="text-center max-w-[600] mx-auto mb-20 flex flex-col items-center justify-center">
           <p className="text-sm md:text-md font-semibold mb-3 text-green">
             CLIENT-DEVELOPMENT DRIVEN
