@@ -4,11 +4,11 @@ import { DollarSign, Flag, User } from "lucide-react";
 
 export default function About() {
   return (
-    <div className="mx-auto w-full max-w-xl px-4 md:px-16 relative">
-      <span className="size-50 md:size-150 absolute top-0 left-0 -translate-x-1/2 bg-[#FCA016]/10 -z-10 rounded-full blur-3xl"></span>
-      <span className="size-50 md:size-150 absolute -top-20 left-0 bg-green/10 -z-10 rounded-full blur-3xl"></span>
-      <span className="size-50 md:size-150 absolute -top-20 right-20 bg-[#FC165B]/10 -z-10 rounded-full blur-3xl"></span>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-16 py-20 border-b-1 border-white/10">
+    <div className="relative mx-auto w-full max-w-xl px-4 md:px-16">
+      <span className="absolute top-0 left-0 -z-10 size-50 -translate-x-1/2 rounded-full bg-[#FCA016]/10 blur-3xl md:size-150"></span>
+      <span className="bg-green/10 absolute -top-20 left-0 -z-10 size-50 rounded-full blur-3xl md:size-150"></span>
+      <span className="absolute -top-20 right-20 -z-10 size-50 rounded-full bg-[#FC165B]/10 blur-3xl md:size-150"></span>
+      <div className="flex flex-col items-center justify-center gap-16 border-b-1 border-white/10 py-20 md:flex-row">
         <div className="md:w-2/5">
           <Image
             src={"/assets/images/AboutImage.png"}
@@ -19,10 +19,10 @@ export default function About() {
           />
         </div>
         <div className="md:w-3/5">
-          <p className="text-green text-sm md:text-md font-semibold mb-2">
+          <p className="text-green md:text-md mb-2 text-sm font-semibold">
             ABOUT
           </p>
-          <h2 className="text-4xl font-bold leading-12 mb-8">
+          <h2 className="mb-8 text-4xl leading-12 font-bold">
             We are creative, smart and hardworking people
           </h2>
           <p className="leading-8 text-white/60">
@@ -34,46 +34,46 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className=" py-20 border-b-1 border-white/10">
-        <div className="text-center mb-20">
-          <p className="text-green text-sm md:text-md font-semibold">
+      <div className="border-b-1 border-white/10 py-20">
+        <div className="mb-20 text-center">
+          <p className="text-green md:text-md text-sm font-semibold">
             STATISTICS
           </p>
-          <h2 className="text-3xl font-bold md:w-2/5 mx-auto leading-12">
+          <h2 className="mx-auto text-3xl leading-12 font-bold md:w-2/5">
             In 3 years we reached 8 countries, 193 clients and earning $100k USD
           </h2>
         </div>
-        <div className="bg-white/5 rounded-[3px] py-4 px-2 md:py-10 md:px-12 grid grid-cols-3 ">
-          <div className="flex flex-row justify-center border-r-1 gap-2 md:gap-8 items-center border-r-white/10">
-            <div className="bg-white/5 rounded-[3px] flex items-center justify-center aspect-square p-3 md:p-5">
+        <div className="grid grid-cols-3 rounded-[3px] bg-white/5 px-2 py-4 md:px-12 md:py-10">
+          <div className="flex flex-row items-center justify-center gap-2 border-r-1 border-r-white/10 md:gap-8">
+            <div className="flex aspect-square items-center justify-center rounded-[3px] bg-white/5 p-3 md:p-5">
               <Flag className="size-[24px] md:size-[30px]" />
             </div>
             <div className="font-bold">
               <p className="text-xl md:text-3xl">8</p>
-              <p className="text-sm md:text-base text-white/60">COUNTRIES</p>
+              <p className="text-sm text-white/60 md:text-base">COUNTRIES</p>
             </div>
           </div>
-          <div className="flex flex-row justify-center border-r-1 gap-2 md:gap-8 items-center border-r-white/10">
-            <div className="bg-white/5 rounded-[3px] flex items-center justify-center aspect-square p3 md:p-5">
+          <div className="flex flex-row items-center justify-center gap-2 border-r-1 border-r-white/10 md:gap-8">
+            <div className="p3 flex aspect-square items-center justify-center rounded-[3px] bg-white/5 md:p-5">
               <User className="size-[24px] md:size-[30px]" />
             </div>
             <div className="font-bold">
               <p className="text-xl md:text-3xl">193</p>
-              <p className="text-sm md:text-base text-white/60">CLIENTS</p>
+              <p className="text-sm text-white/60 md:text-base">CLIENTS</p>
             </div>
           </div>
-          <div className="flex flex-row justify-center gap-2 md:gap-8 items-center ">
-            <div className="bg-white/5 rounded-[3px] flex items-center justify-center aspect-square p-3 md:p-5">
+          <div className="flex flex-row items-center justify-center gap-2 md:gap-8">
+            <div className="flex aspect-square items-center justify-center rounded-[3px] bg-white/5 p-3 md:p-5">
               <DollarSign className="size-[24px] md:size-[30px]" />
             </div>
             <div className="font-bold">
               <p className="text-xl md:text-3xl">$100K</p>
-              <p className="text-sm md:text-base text-white/60">EARNING</p>
+              <p className="text-sm text-white/60 md:text-base">EARNING</p>
             </div>
           </div>
         </div>
       </div>
-      <div className="border-t-1 border-b-1 border-white/10 py-6 flex flex-wrap items-center justify-center gap-8 mb-20">
+      <div className="mb-20 flex flex-wrap items-center justify-center gap-8 border-t-1 border-b-1 border-white/10 py-6">
         {["Facebook", "Forbes", "Github", "Google", "Microsoft"].map(
           (logo, index) => {
             return (
@@ -88,15 +88,15 @@ export default function About() {
           },
         )}
       </div>
-      <div className="text-center mb-20">
-        <p className="text-green text-sm md:text-md font-semibold">OUR TEAM</p>
-        <h2 className="text-3xl font-bold md:w-2/5 mx-auto leading-12">
+      <div className="mb-20 text-center">
+        <p className="text-green md:text-md text-sm font-semibold">OUR TEAM</p>
+        <h2 className="mx-auto text-3xl leading-12 font-bold md:w-2/5">
           Meet the team! All creative people are here
         </h2>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-2 gap-6 md:grid-cols-3">
         {teams.map((item, index) => (
-          <div key={index} className="bg-white/5 rounded-[3px]">
+          <div key={index} className="rounded-[3px] bg-white/5">
             <div className="overflow-hidden">
               <Image
                 src={item.imageUrl}
@@ -107,7 +107,7 @@ export default function About() {
               />
             </div>
             <div className="p-9">
-              <p className="font-bold text-md">{item.name}</p>
+              <p className="text-md font-bold">{item.name}</p>
               <p className="text-sm text-white/60">{item.title}</p>
             </div>
           </div>

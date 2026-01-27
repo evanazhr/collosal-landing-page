@@ -3,19 +3,19 @@ import { Figma, Code, Box } from "lucide-react";
 import { Button } from "@/components/ui/button";
 export default function HeroSection() {
   return (
-    <section className="w-full flex items-center justify-center">
-      <div className="max-w-[1100px] mx-auto px-4 md:px-16 relative mt-20">
-        <span className="size-50 md:size-150 absolute top-0 left-0 -translate-x-1/2 bg-[#FCA016]/10 -z-10 rounded-full blur-3xl"></span>
-        <span className="size-50 md:size-150 absolute -top-20 left-0 bg-green/10 -z-10 rounded-full blur-3xl"></span>
-        <span className="size-50 md:size-150 absolute -top-20 right-20 bg-[#FC165B]/10 -z-10 rounded-full blur-3xl"></span>
-        <div className="text-center max-w-[600] mx-auto mb-20 flex flex-col items-center justify-center">
-          <p className="text-sm md:text-md font-semibold mb-3 text-green">
+    <section className="flex w-full items-center justify-center">
+      <div className="relative mx-auto mt-20 max-w-[1100px] px-4 md:px-16">
+        <span className="absolute top-0 left-0 -z-10 size-50 -translate-x-1/2 rounded-full bg-[#FCA016]/10 blur-3xl md:size-150"></span>
+        <span className="bg-green/10 absolute -top-20 left-0 -z-10 size-50 rounded-full blur-3xl md:size-150"></span>
+        <span className="absolute -top-20 right-20 -z-10 size-50 rounded-full bg-[#FC165B]/10 blur-3xl md:size-150"></span>
+        <div className="mx-auto mb-20 flex max-w-[600] flex-col items-center justify-center text-center">
+          <p className="md:text-md text-green mb-3 text-sm font-semibold">
             CLIENT-DEVELOPMENT DRIVEN
           </p>
-          <h1 className="text-3xl lg:text-4xl font-bold mb-6">
+          <h1 className="mb-6 text-3xl font-bold lg:text-4xl">
             We Design. We Develop. We Ship. In The Same Day.
           </h1>
-          <p className="text-base text-white/60 md:text-md lg:text-lg mb-[40px]">
+          <p className="md:text-md mb-[40px] text-base text-white/60 lg:text-lg">
             We are committed to not making clients wait. We will deliver the
             work as quickly as possible. Even on the same day. Even so, we do
             not reduce the quality of our work.
@@ -26,12 +26,12 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-6 mb-20">
+        <div className="mb-20 flex flex-col gap-6 md:flex-row">
           {[
             {
               title: "Design",
               icon: (
-                <Figma className="mb-6 bg-light p-2 size-[50px] rounded-[3px]" />
+                <Figma className="bg-light mb-6 size-[50px] rounded-[3px] p-2" />
               ),
               text: "The project interface will be designed first, our favorite tool is Figma.",
             },
@@ -39,14 +39,14 @@ export default function HeroSection() {
             {
               title: "Develop",
               icon: (
-                <Code className="mb-6 bg-light p-2 size-[50px] rounded-[3px]" />
+                <Code className="bg-light mb-6 size-[50px] rounded-[3px] p-2" />
               ),
               text: "Transform design and write business logic here. Choose the technology you want.",
             },
             {
               title: "Ship",
               icon: (
-                <Box className="mb-6 bg-light p-2 size-[50px] rounded-[3px]" />
+                <Box className="bg-light mb-6 size-[50px] rounded-[3px] p-2" />
               ),
               text: "After the work is complete, we will send the project and all its assets to you.",
             },
@@ -60,7 +60,7 @@ export default function HeroSection() {
             );
           })}
         </div>
-        <div className="border-t-1 border-b-1 border-white/10 py-6 flex flex-wrap items-center justify-center gap-8">
+        <div className="flex flex-wrap items-center justify-center gap-8 border-t-1 border-b-1 border-white/10 py-6">
           {["Facebook", "Forbes", "Github", "Google", "Microsoft"].map(
             (logo, index) => {
               return (

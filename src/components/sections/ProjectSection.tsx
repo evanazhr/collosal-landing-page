@@ -3,12 +3,12 @@ import { Button } from "@/components/ui/button";
 
 export default function ProjectSection() {
   return (
-    <section className="w-full flex justify-center items-center">
-      <div className="w-full max-w-[1100px] px-4 md:px-16 mx-auto">
-        <div className="border-t-1 relative border-white/10 py-20">
+    <section className="flex w-full items-center justify-center">
+      <div className="mx-auto w-full max-w-[1100px] px-4 md:px-16">
+        <div className="relative border-t-1 border-white/10 py-20">
           <Image
             src="/assets/backgrounds/rectangle.svg"
-            className="absolute size-100  -left-1/6 -z-10"
+            className="absolute -left-1/6 -z-10 size-100"
             width="100"
             height="100"
             alt=""
@@ -36,24 +36,24 @@ export default function ProjectSection() {
           />
 
           <div className="mb-16 flex flex-col items-center justify-center">
-            <p className="text-sm md:text-md uppercase mb-2 text-center">
+            <p className="md:text-md mb-2 text-center text-sm uppercase">
               PROJECTS
             </p>
-            <p className="font-bold text-center text-2xl lg:text-3xl mb-6 max-w-[500px]">
+            <p className="mb-6 max-w-[500px] text-center text-2xl font-bold lg:text-3xl">
               We Have Completed many amazing projects that you will not believe
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className="flex flex-col items-center justify-center w-full">
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+            <div className="flex w-full flex-col items-center justify-center">
               <Image
-                className="w-full mb-10"
+                className="mb-10 w-full"
                 src="/assets/images/MobileAppIllustration.svg"
                 width={300}
                 height={300}
                 alt="Mobile App Illustration"
               />
 
-              <h3 className="font-bold text-xl mb-3">
+              <h3 className="mb-3 text-xl font-bold">
                 The Mobile App Landing Page
               </h3>
               <p className="mb-6">A landing page for mobile app</p>
@@ -63,16 +63,16 @@ export default function ProjectSection() {
               </Button>
             </div>
 
-            <div className="flex flex-col items-center justify-center w-full">
+            <div className="flex w-full flex-col items-center justify-center">
               <Image
-                className="w-full mb-10"
+                className="mb-10 w-full"
                 src="/assets/images/DesktopAppIllustration.svg"
                 width={300}
                 height={300}
                 alt="Desktop App Illustration"
               />
 
-              <h3 className="font-bold text-xl mb-3">
+              <h3 className="mb-3 text-xl font-bold">
                 The Desktop App Landing Page
               </h3>
               <p className="mb-6">A landing page for desktop app</p>

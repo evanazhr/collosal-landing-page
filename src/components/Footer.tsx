@@ -5,16 +5,16 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="w-full pt-40">
-      <div className="max-w-[1100px] relative mx-auto px-4 md:px-16">
+      <div className="relative mx-auto max-w-[1100px] px-4 md:px-16">
         <Image
           src="/assets/backgrounds/ellipse/ellipse-red.svg"
-          className="absolute right-0 xl:-right-10 top-0"
+          className="absolute top-0 right-0 xl:-right-10"
           width={45}
           height={45}
           alt=""
         />
-        <div className="flex flex-col md:flex-row gap-8 relative items-center justify-between py-6 border-t-1 border-b-1 border-white/10">
-          <p className="text-[24px] md:text-[24px] text-center md:text-left font-bold">
+        <div className="relative flex flex-col items-center justify-between gap-8 border-t-1 border-b-1 border-white/10 py-6 md:flex-row">
+          <p className="text-center text-[24px] font-bold md:text-left md:text-[24px]">
             We&apos;ve prepared everything, it&apos;s time for you to tell the
             problem
           </p>
@@ -27,9 +27,9 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col relative sm:flex-row md:justify-between md:items-start justify-center items-start gap-8 leading-9 py-24">
+        <div className="relative flex flex-col items-start justify-center gap-8 py-24 leading-9 sm:flex-row md:items-start md:justify-between">
           <Image
-            className="absolute left-0 md:-left-10 lg:-left-20 top-5"
+            className="absolute top-5 left-0 md:-left-10 lg:-left-20"
             src="/assets/backgrounds/ellipse/ellipse-green.svg"
             width={55}
             height={55}
@@ -37,7 +37,7 @@ export default function Footer() {
           />
 
           <div className="flex flex-col">
-            <Link href={"/"} className="flex gap-2 font-bold text-lg mb-4">
+            <Link href={"/"} className="mb-4 flex gap-2 text-lg font-bold">
               <Image
                 src="/assets/icons/CollectionOutline.svg"
                 width={30}
@@ -50,7 +50,7 @@ export default function Footer() {
             <p>Design By Collosal LLC</p>
           </div>
           <div>
-            <p className="font-semibold uppercase text-base">Services</p>
+            <p className="text-base font-semibold uppercase">Services</p>
             <ul>
               {[
                 { name: "Web Development", url: "/services#development" },
@@ -73,7 +73,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <p className="font-semibold uppercase text-base">Company</p>
+            <p className="text-base font-semibold uppercase">Company</p>
             <ul>
               {[
                 { name: "About", url: "/about" },
@@ -97,7 +97,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <p className="font-semibold uppercase text-base">Resources</p>
+            <p className="text-base font-semibold uppercase">Resources</p>
             <ul>
               {[
                 { name: "Support", url: "/" },

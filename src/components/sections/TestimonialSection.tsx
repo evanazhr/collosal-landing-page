@@ -19,11 +19,11 @@ export default function TestimonialSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="w-full flex justify-center items-center py-12">
-      <div className="w-full max-w-[1366px] px-4 md:px-16 mx-auto relative">
+    <section className="flex w-full items-center justify-center py-12">
+      <div className="relative mx-auto w-full max-w-[1366px] px-4 md:px-16">
         <div className="flex flex-col items-center justify-center">
-          <p className="text-sm md:text-md">TESTIMONIAL</p>
-          <h2 className="text-3xl max-w-[500px] font-bold text-center mb-8">
+          <p className="md:text-md text-sm">TESTIMONIAL</p>
+          <h2 className="mb-8 max-w-[500px] text-center text-3xl font-bold">
             What do our clients say that we never let down?
           </h2>
         </div>
@@ -76,14 +76,11 @@ export default function TestimonialSection() {
           {clients.map((client, index) => (
             <SwiperSlide key={index}>
               <div
-                className={`flex flex-col my-20 items-center justify-center text-center p-8 md:p-12 gap-2 
-                           bg-light rounded-lg shadow-xl h-full 
-                           transform transition-all duration-300 ease-in-out 
-                           ${
-                             index === activeIndex
-                               ? "scale-[1.05] shadow-2xl translate-y-[-50px]" // Card aktif: sedikit lebih besar, bayangan lebih kuat, naik 15px
-                               : "scale-100 shadow-md text-white/60"
-                           }`}
+                className={`bg-light my-20 flex h-full transform flex-col items-center justify-center gap-2 rounded-lg p-8 text-center shadow-xl transition-all duration-300 ease-in-out md:p-12 ${
+                  index === activeIndex
+                    ? "translate-y-[-50px] scale-[1.05] shadow-2xl" // Card aktif: sedikit lebih besar, bayangan lebih kuat, naik 15px
+                    : "scale-100 text-white/60 shadow-md"
+                }`}
               >
                 <div className="relative aspect-square">
                   <Image
@@ -91,19 +88,19 @@ export default function TestimonialSection() {
                     alt={client.name + " image"}
                     width={70}
                     height={70}
-                    className="rounded-full object-cover mb-4"
+                    className="mb-4 rounded-full object-cover"
                   />
 
                   <Image
                     src="/assets/icons/quote.svg"
-                    className="absolute bottom-0 right-0 bg-primary border-2 border-card-dark rounded-full p-1.5 size-6"
+                    className="bg-primary border-card-dark absolute right-0 bottom-0 size-6 rounded-full border-2 p-1.5"
                     alt=""
                     width={15}
                     height={15}
                   />
                 </div>
-                <p className="text-xl font-semibold mt-2">{client.name}</p>
-                <p className="text-md text-white/60 mb-4 font-medium">
+                <p className="mt-2 text-xl font-semibold">{client.name}</p>
+                <p className="text-md mb-4 font-medium text-white/60">
                   {client.title}
                 </p>
                 <p className="text-lg leading-relaxed">{client.review}</p>

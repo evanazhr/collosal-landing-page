@@ -2,21 +2,21 @@ import { Button } from "@/components/ui/button";
 
 export default function ServiceSection() {
   return (
-    <section className="w-full rounded-lg max-w-[1366px] bg-highlight mx-auto mb-20">
-      <div className="w-full max-w-[1100px] mx-auto px-4 md:px-16 py-20">
-        <div className="flex flex-col items-center justify-center mb-20 ">
-          <p className="text-sm md:text-md font-semibold">GET STARTED</p>
-          <h2 className="max-w-[500px] font-bold text-2xl lg:text-3xl text-center">
+    <section className="bg-highlight mx-auto mb-20 w-full max-w-[1366px] rounded-lg">
+      <div className="mx-auto w-full max-w-[1100px] px-4 py-20 md:px-16">
+        <div className="mb-20 flex flex-col items-center justify-center">
+          <p className="md:text-md text-sm font-semibold">GET STARTED</p>
+          <h2 className="max-w-[500px] text-center text-2xl font-bold lg:text-3xl">
             What do you need? Choose a service that can help you
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          <div className="flex flex-col pt-16 px-12 pb-7 item-center justify-center w-full bg-[#3F2379] rounded-[10px]">
-            <div className="flex flex-row pb-6 border-b-1 border-light justify-between">
-              <h3 className="font-bold text-sm">UI Design</h3>
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div className="item-center flex w-full flex-col justify-center rounded-[10px] bg-[#3F2379] px-12 pt-16 pb-7">
+            <div className="border-light flex flex-row justify-between border-b-1 pb-6">
+              <h3 className="text-sm font-bold">UI Design</h3>
               <div>
                 <p className="text-xs">Starting from</p>
-                <p className="font-bold text-4xl">1200$</p>
+                <p className="text-4xl font-bold">1200$</p>
               </div>
             </div>
             <div className="py-6">
@@ -31,12 +31,12 @@ export default function ServiceSection() {
               Detail
             </Button>
           </div>{" "}
-          <div className="flex flex-col pt-16 px-12 pb-7 item-center justify-center w-full bg-[#3F2379] rounded-[10px]">
-            <div className="flex flex-row pb-6 border-b-1 border-light justify-between">
-              <h3 className="font-bold text-base">Development</h3>
+          <div className="item-center flex w-full flex-col justify-center rounded-[10px] bg-[#3F2379] px-12 pt-16 pb-7">
+            <div className="border-light flex flex-row justify-between border-b-1 pb-6">
+              <h3 className="text-base font-bold">Development</h3>
               <div>
                 <p className="text-xs">Starting from</p>
-                <p className="font-bold text-4xl">5000$</p>
+                <p className="text-4xl font-bold">5000$</p>
               </div>
             </div>
             <div className="py-6">
@@ -51,14 +51,14 @@ export default function ServiceSection() {
               Detail
             </Button>
           </div>
-          <div className="flex flex-col pt-16 px-12 pb-7 item-center justify-center w-full bg-[#792366] rounded-[10px]">
-            <div className="flex flex-row pb-6 border-b-1 border-light justify-between">
-              <h3 className="font-bold text-sm md:text-md font-semibold">
+          <div className="item-center flex w-full flex-col justify-center rounded-[10px] bg-[#792366] px-12 pt-16 pb-7">
+            <div className="border-light flex flex-row justify-between border-b-1 pb-6">
+              <h3 className="md:text-md text-sm font-bold font-semibold">
                 UI Design
               </h3>
               <div>
                 <p className="text-xs">Starting from</p>
-                <p className="font-bold text-4xl">3000$</p>
+                <p className="text-4xl font-bold">3000$</p>
               </div>
             </div>
             <div className="py-6">

@@ -33,28 +33,28 @@ export default function HowWeWork() {
   ];
 
   return (
-    <div className="mx-auto w-full max-w-xl px-4 md:px-16 relative">
-      <span className="size-50 md:size-150 absolute top-0 left-0 -translate-x-1/2 bg-[#FCA016]/10 -z-10 rounded-full blur-3xl"></span>
-      <span className="size-50 md:size-150 absolute -top-20 left-0 bg-green/10 -z-10 rounded-full blur-3xl"></span>
-      <span className="size-50 md:size-150 absolute -top-20 right-20 bg-[#FC165B]/10 -z-10 rounded-full blur-3xl"></span>
+    <div className="relative mx-auto w-full max-w-xl px-4 md:px-16">
+      <span className="absolute top-0 left-0 -z-10 size-50 -translate-x-1/2 rounded-full bg-[#FCA016]/10 blur-3xl md:size-150"></span>
+      <span className="bg-green/10 absolute -top-20 left-0 -z-10 size-50 rounded-full blur-3xl md:size-150"></span>
+      <span className="absolute -top-20 right-20 -z-10 size-50 rounded-full bg-[#FC165B]/10 blur-3xl md:size-150"></span>
 
-      <div className="text-center mb-20 py-20 border-b-1 border-white/10">
-        <p className="text-green text-sm md:text-md font-semibold">
+      <div className="mb-20 border-b-1 border-white/10 py-20 text-center">
+        <p className="text-green md:text-md text-sm font-semibold">
           HOW WE WORK
         </p>
-        <h2 className="text-3xl font-bold md:w-2/5 mx-auto leading-12">
+        <h2 className="mx-auto text-3xl leading-12 font-bold md:w-2/5">
           We have a workflow that allows the job to be delivered well
         </h2>
       </div>
-      <div className="flex flex-col gap-24 mb-24">
+      <div className="mb-24 flex flex-col gap-24">
         {steps.map((item, index) => (
           <div
             key={index}
-            className={`flex ${index % 2 == 0 ? "flex-row" : "flex-row-reverse"} justify-center items-center gap-8 `}
+            className={`flex ${index % 2 == 0 ? "flex-row" : "flex-row-reverse"} items-center justify-center gap-8`}
           >
-            <div className="w-1/2 flex justify-center items-center relative">
-              <span className="size-50 md:size-50 absolute top-0 right-0 -translate-x-1/2 bg-[#FCA016]/10 -z-10 rounded-full blur-3xl"></span>
-              <span className="size-50 md:size-80 absolute bottom-0 left-0  bg-[#FC165B]/10 -z-10 rounded-full blur-3xl"></span>
+            <div className="relative flex w-1/2 items-center justify-center">
+              <span className="absolute top-0 right-0 -z-10 size-50 -translate-x-1/2 rounded-full bg-[#FCA016]/10 blur-3xl md:size-50"></span>
+              <span className="absolute bottom-0 left-0 -z-10 size-50 rounded-full bg-[#FC165B]/10 blur-3xl md:size-80"></span>
 
               <Image
                 src={item.imageUrl}
@@ -64,10 +64,10 @@ export default function HowWeWork() {
               />
             </div>
             <div className="w-1/2 leading-8">
-              <p className="text-green text-sm md:text-md font-semibold">
+              <p className="text-green md:text-md text-sm font-semibold">
                 {item.badge}
               </p>
-              <h3 className="font-bold text-xl md:text-3xl mb-4">
+              <h3 className="mb-4 text-xl font-bold md:text-3xl">
                 {item.title}
               </h3>
               <p className="mb-8 text-base text-white/40">
