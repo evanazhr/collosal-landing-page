@@ -76,4 +76,73 @@ const teams = [
   },
 ];
 
-export { clients, teams };
+const price = [
+  {
+    title: "UI DESIGN",
+    price: 1200,
+    feature: [
+      "10 design pages",
+      "Well-documented",
+      "4 revisions",
+      "$100/additional page",
+    ],
+    isPromoted: false,
+  },
+  {
+    title: "DEVELOPMENT",
+    price: 5000,
+    feature: [
+      "Web & Mobile",
+      "Well-documented",
+      "8 revisions",
+      "$1000/additional feature",
+    ],
+    isPromoted: true,
+  },
+  {
+    title: "MAINTENANCE",
+    price: 3000,
+    feature: [
+      "Daily backup",
+      "3 hours of maintenance",
+      "Including fixing",
+      "$50/additional hour",
+    ],
+    isPromoted: false,
+  },
+];
+
+const questions = [
+  {
+    question: "How is the payment system?",
+    answer:
+      "If the project has agreed, you will pay an advance, and when the progress reaches 50% you will make a second payment, and when the progress is 100% you will pay it off.",
+  },
+  {
+    question: "Can I consult first?",
+    answer:
+      "Of course you can consult us first. We are very happy to help your problems and provide our best solutions. You can contact us via the contact page.",
+  },
+  {
+    question: "What if the project stops halfway?",
+    answer:
+      "We promise to always finish the project on time, if a problem occurs (because of our mistake), all payments will be refunded. And the project will be terminated.",
+  },
+  {
+    question: "Does it include servers and domains?",
+    answer:
+      "You don't need to think about anything else, we have everything prepared. You just need to check your progress and make sure the features you want are the right one.",
+  },
+  {
+    question: "Will I get the source code?",
+    answer:
+      "When the project is 100% complete, all the resources, such as design files, analysis diagrams, source code, etc. will be provided to you. You don't need to worry about this.",
+  },
+  {
+    question: "Is there a warranty?",
+    answer:
+      "1 year warranty for our errors or mistakes. If you want to add a feature that is not included in the warranty, there is another fee per feature, and the price depends on the difficulty.",
+  },
+];
+
+export { clients, teams, price, questions };
